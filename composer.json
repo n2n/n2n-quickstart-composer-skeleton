@@ -1,6 +1,6 @@
 {
-    "name": "n2n/n2n-skeleton",
-    "description": "n2n skeleton application installable by Composer",
+    "name": "n2n/n2n-quickstart-skeleton",
+    "description": "n2n quickstart skeleton application installable by Composer",
     "type": "project",
     "minimum-stability": "dev",
     "prefer-stable": true,
