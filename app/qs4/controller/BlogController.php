@@ -27,7 +27,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\overview.html', array('blogArticles' => $blogArticles));
 	}
 	
-	public function detail($urlPart) {
+	public function detail(string $urlPart) {
 		// Artikel holen
 		$blogArticle = $this->blogDao->getBlogArticleByUrlPart($urlPart);
 		// prüfen, ob artikel gefunden
@@ -39,7 +39,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('~\view\detail.html', array('blogArticle' => $blogArticle));
 	}
 	
-	public function doComment($blogId) {
+	public function doComment(int $blogId) {
 		// Artikel holen über ID
 		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// Prüfen, ob Artikel gefunden
@@ -59,7 +59,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\comment.html', array('commentForm' => $commentForm));
 	}
 	
-	public function doThanks($blogId) {
+	public function doThanks(int $blogId) {
 		// Artikel holen über ID
 		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// prüfen, ob Artikel gefunden

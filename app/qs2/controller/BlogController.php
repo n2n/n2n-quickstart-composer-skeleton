@@ -16,7 +16,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\overview.html');
 	}
 	
-	public function detail($urlPart) {
+	public function detail(string $urlPart) {
 		// 2.) Aufruf vom Modulpfad aus
 		$this->forward('~\view\detail.html');
 	}

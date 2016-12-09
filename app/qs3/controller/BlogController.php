@@ -26,7 +26,7 @@ class BlogController extends ControllerAdapter {
 		$this->forward('..\view\overview.html', array('blogArticles' => $blogArticles));
 	}
 	
-	public function detail($urlPart) {
+	public function detail(string $urlPart) {
 		// Artikel holen
 		$blogArticle = $this->blogDao->getBlogByUrlPart($urlPart);
 		// prüfen, ob artikel gefunden

@@ -29,7 +29,7 @@ class BlogCommentForm implements Dispatchable {
 		return $this->email;
 	}
 
-	public function setEmail($email) {
+	public function setEmail(string $email) {
 		$this->email = $email;
 	}
 
@@ -45,7 +45,7 @@ class BlogCommentForm implements Dispatchable {
 		return $this->content;
 	}
 
-	public function setContent($content) {
+	public function setContent(string $content) {
 		$this->content = $content;
 	}
 
