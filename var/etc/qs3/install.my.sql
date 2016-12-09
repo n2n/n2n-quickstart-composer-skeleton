@@ -1,3 +1,4 @@
+
 CREATE TABLE IF NOT EXISTS `blog_article` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `title` varchar(64) NOT NULL,

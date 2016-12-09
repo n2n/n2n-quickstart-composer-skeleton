@@ -14,7 +14,7 @@ class BlogController extends ControllerAdapter {
 		echo 'Hello World!';
 	}
 
-	public function detail($urlPart) {
+	public function detail(string $urlPart) {
 		echo 'Detail: ' . $urlPart;
 	}
 

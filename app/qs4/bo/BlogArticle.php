@@ -30,7 +30,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->id;
 	}
 
-	public function setId($id) {
+	public function setId(int $id) {
 		$this->id = $id;
 	}
 
@@ -38,7 +38,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->title;
 	}
 
-	public function setTitle($title) {
+	public function setTitle(string $title) {
 		$this->title = $title;
 	}
 
@@ -46,7 +46,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->lead;
 	}
 
-	public function setLead($lead) {
+	public function setLead(string $lead) {
 		$this->lead = $lead;
 	}
 
@@ -54,7 +54,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->contentHtml;
 	}
 
-	public function setContentHtml($contentHtml) {
+	public function setContentHtml(string $contentHtml) {
 		$this->contentHtml = $contentHtml;
 	}
 
@@ -62,7 +62,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->urlPart;
 	}
 
-	public function setUrlPart($urlPart) {
+	public function setUrlPart(string $urlPart) {
 		$this->urlPart = $urlPart;
 	}
 
@@ -70,7 +70,7 @@ class BlogArticle extends ObjectAdapter {
 		return $this->online;
 	}
 
-	public function setOnline($online) {
+	public function setOnline(bool $online) {
 		$this->online = $online;
 	}
 	
