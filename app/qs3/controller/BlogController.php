@@ -28,7 +28,7 @@ class BlogController extends ControllerAdapter {
 	
 	public function detail(string $urlPart) {
 		// Artikel holen
-		$blogArticle = $this->blogDao->getBlogByUrlPart($urlPart);
+		$blogArticle = $this->blogDao->getBlogArticleByUrlPart($urlPart);
 		// prüfen, ob artikel gefunden
 		if ($blogArticle === null) {
 			throw new PageNotFoundException('Invalid urlPart: ' . $urlPart);
