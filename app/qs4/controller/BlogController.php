@@ -29,7 +29,7 @@ class BlogController extends ControllerAdapter {
 	
 	public function detail($urlPart) {
 		// Artikel holen
-		$blogArticle = $this->blogDao->getBlogByUrlPart($urlPart);
+		$blogArticle = $this->blogDao->getBlogArticleByUrlPart($urlPart);
 		// prüfen, ob artikel gefunden
 		if ($blogArticle === null) {
 			throw new PageNotFoundException('Invalid urlPart: ' . $urlPart);
@@ -41,7 +41,7 @@ class BlogController extends ControllerAdapter {
 	
 	public function doComment($blogId) {
 		// Artikel holen über ID
-		$blogArticle = $this->blogDao->getBlogById($blogId);
+		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// Prüfen, ob Artikel gefunden
 		if ($blogArticle === null) {
 			throw new PageNotFoundException('invalid id: ' . $blogId);
@@ -61,7 +61,7 @@ class BlogController extends ControllerAdapter {
 	
 	public function doThanks($blogId) {
 		// Artikel holen über ID
-		$blogArticle = $this->blogDao->getBlogById($blogId);
+		$blogArticle = $this->blogDao->getBlogArticleById($blogId);
 		// prüfen, ob Artikel gefunden
 		if ($blogArticle === null) {
 			throw new PageNotFoundException('invalid id: ' . $blogId);
