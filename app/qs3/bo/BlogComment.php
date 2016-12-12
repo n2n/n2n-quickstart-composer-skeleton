@@ -30,7 +30,7 @@ class BlogComment extends ObjectAdapter {
 		return $this->id;
 	}
 
-	public function setId(int $id) {
+	public function setId($id) {
 		$this->id = $id;
 	}
 
@@ -52,7 +52,7 @@ class BlogComment extends ObjectAdapter {
 		return $this->email;
 	}
 
-	public function setEmail(string $email) {
+	public function setEmail($email) {
 		$this->email = $email;
 	}
 
@@ -74,7 +74,7 @@ class BlogComment extends ObjectAdapter {
 		return $this->content;
 	}
 
-	public function setContent(string $content) {
+	public function setContent($content) {
 		$this->content = $content;
 	}
 	
