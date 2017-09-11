@@ -1,20 +1,20 @@
 {
-	"name" : "n2n/n2n-quickstart-skeleton",
-	"description" : "n2n quickstart skeleton application installable by Composer",
-	"type" : "project",
-	"minimum-stability" : "dev",
-	"prefer-stable" : true,
-	"require" : {
-		"php" : ">=7.0",
-		"n2n/n2n" : "7.1.x-dev",
-		"n2n/n2n-batch" : "7.1.x-dev",
-		"n2n/n2n-context" : "7.1.x-dev",
-		"n2n/n2n-mail" : "7.1.x-dev",
-		"n2n/n2n-impl-persistence-meta" : "7.1.x-dev",
-		"n2n/n2n-impl-persistence-orm" : "7.1.x-dev",
-		"n2n/n2n-impl-web-dispatch" : "7.1.x-dev",
-		"n2n/n2n-impl-web-ui" : "7.1.x-dev",
-		"n2n/n2n-composer-skeleton-installer" : "7.1.x-dev",
-		"n2n/hangar" : "7.1.x-dev"
-	}
+    "description": "n2n quickstart skeleton application installable by Composer",
+    "minimum-stability": "dev",
+    "name": "n2n/n2n-quickstart-skeleton",
+    "prefer-stable": true,
+    "require": {
+        "n2n/hangar": "^7.1.0",
+        "n2n/n2n": "^7.1.12",
+        "n2n/n2n-batch": "^7.1.12",
+        "n2n/n2n-composer-skeleton-installer": "~7.1.0",
+        "n2n/n2n-context": "^7.1.12",
+        "n2n/n2n-impl-persistence-meta": "^7.1.12",
+        "n2n/n2n-impl-persistence-orm": "^7.1.12",
+        "n2n/n2n-impl-web-dispatch": "^7.1.12",
+        "n2n/n2n-impl-web-ui": "^7.1.12",
+        "n2n/n2n-mail": "^7.1.12",
+        "php": ">=7.0"
+    },
+    "type": "project"
 }
